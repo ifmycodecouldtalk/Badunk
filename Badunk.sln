@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32126.317
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Badunk", "Badunk\Badunk.csproj", "{37235EFF-9664-4015-8646-F5C76B89DB4C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contracts", "Contracts\Contracts.csproj", "{1EE56A4E-F38E-4543-B083-66FAF43A349A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{E1C2B549-ECE1-4071-A9A8-C15A0EB7F816}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{37235EFF-9664-4015-8646-F5C76B89DB4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37235EFF-9664-4015-8646-F5C76B89DB4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37235EFF-9664-4015-8646-F5C76B89DB4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37235EFF-9664-4015-8646-F5C76B89DB4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EE56A4E-F38E-4543-B083-66FAF43A349A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EE56A4E-F38E-4543-B083-66FAF43A349A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EE56A4E-F38E-4543-B083-66FAF43A349A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EE56A4E-F38E-4543-B083-66FAF43A349A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1C2B549-ECE1-4071-A9A8-C15A0EB7F816}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1C2B549-ECE1-4071-A9A8-C15A0EB7F816}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1C2B549-ECE1-4071-A9A8-C15A0EB7F816}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1C2B549-ECE1-4071-A9A8-C15A0EB7F816}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {32FA155A-8832-4136-A4D0-3F1BA92F42F1}
+	EndGlobalSection
+EndGlobal
