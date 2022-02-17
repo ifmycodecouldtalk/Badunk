@@ -1,4 +1,5 @@
 ﻿using Entities.Models;
+using Entities.Configuration;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -14,6 +15,13 @@ namespace Entities
         : base(options)
         {
         }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.ApplyConfiguration(new UserConfiguration());
+            modelBuilder.ApplyConfiguration(new TasksConfiguration());
+        }
+
         public DbSet<UserInfo>? Users { get; set; }
         public DbSet<Models.Task>? Tasks { get; set; }
     }
