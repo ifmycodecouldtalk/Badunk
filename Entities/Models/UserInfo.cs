@@ -15,7 +15,7 @@ namespace Entities.Models
 
         [Required(ErrorMessage = "Username is a required field")]
         [MaxLength(60, ErrorMessage = "Maximum length for the Username is 60 characters.")]
-        public string? UserName { get; set; }
+        public string? userName { get; set; }
 
         [Required(ErrorMessage = "The password is a required field")]
         [MaxLength(60, ErrorMessage = "Maximum length for the password is 60 characters")]

@@ -15,6 +15,16 @@ namespace Repository
         : base(repositoryContext)
         {
         }
+
+        public IEnumerable<UserInfo> GetAllUsers(bool trackChanges) =>
+             FindAll(trackChanges)
+             .OrderBy(c => c.userName)
+             .ToList();
+        public UserInfo? GetUser(Guid userId, bool trackChanges) =>
+             FindByCondition(c => c.Id.Equals(userId), trackChanges)
+             .SingleOrDefault();
+        public void CreateUser(UserInfo user) => Create(user);
+
     }
 
 }

@@ -18,7 +18,7 @@ namespace Entities.Configuration
             new UserInfo
             {
                 Id = new Guid("c9d4c053-49b6-410c-bc78-2d54a9991870"),
-                UserName = "mycodecantalk",
+                userName = "mycodecantalk",
                 password = "secret!password",
             }
             );

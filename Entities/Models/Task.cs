@@ -26,7 +26,6 @@ namespace Entities.Models
 
         [ForeignKey(nameof(UserInfo))]
         public Guid UserId { get; set; }
-        public UserInfo? UserInfo { get; set; }
     }
 
 }

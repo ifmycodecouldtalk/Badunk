@@ -1,5 +1,7 @@
-﻿using Entities;
+﻿using Contracts;
+using Entities;
 using Microsoft.EntityFrameworkCore;
+using Repository;
 
 namespace Badunk.Extensions
 {
@@ -22,6 +24,9 @@ namespace Badunk.Extensions
              services.AddDbContext<RepositoryContext>(opts =>
              opts.UseSqlServer(configuration.GetConnectionString("sqlConnection"), b => 
                 b.MigrationsAssembly("Badunk")));
+        public static void ConfigureRepositoryManager(this IServiceCollection services) =>
+            services.AddScoped<IRepositoryManager, RepositoryManager>();
+
 
     }
 }

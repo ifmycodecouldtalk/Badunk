@@ -15,6 +15,15 @@ namespace Repository
         : base(repositoryContext)
         {
         }
+        public void CreateTaskForUser(Guid userId, Entities.Models.Task task)
+        {
+            task.UserId = userId;
+            Create(task);
+        }
+        public IEnumerable<Entities.Models.Task> GetTasks(Guid companyId, bool trackChanges) =>
+             FindByCondition(e => e.UserId.Equals(companyId), trackChanges)
+             .OrderBy(e => e.Name);
+
     }
 
 }
